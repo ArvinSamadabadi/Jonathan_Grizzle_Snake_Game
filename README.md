@@ -1,6 +1,3 @@
-# Jonathan_Grizzle_Snake_Game
- Snake 
-# Jonathan_Grizzle_Snake
 IS 3020 Snake Game Grizzle
 
 This is a repository for a library of snake game code. I will post code of different snake games as well as several timer codes. 
