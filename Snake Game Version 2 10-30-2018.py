@@ -1,11 +1,23 @@
 import pygame, random, sys
 from pygame.locals import *
+import time
+
+
+print("Game will start in 10 seconds! Get ready!")
+timer=int(10)
+while (timer != 0 ):
+    timer=timer-1
+    time.sleep(1)
+    print(timer)
+
+
+      
 def collide(x1, x2, y1, y2, w1, w2, h1, h2):
 	if x1+w1>x2 and x1<x2+w2 and y1+h1>y2 and y1<y2+h2:return True
 	else:return False
 def die(screen, score):
-	f=pygame.font.SysFont('Arial', 30);t=f.render('Your score was: '+str(score), True, (0, 0, 0));screen.blit(t, (10, 270));pygame.display.update();pygame.time.wait(2000);sys.exit(0)
-xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210];dirs = 0;score = 0;applepos = (random.randint(0, 590), random.randint(0, 590));pygame.init();s=pygame.display.set_mode((600, 600));pygame.display.set_caption('Snake');appleimage = pygame.Surface((10, 10));appleimage.fill((0, 255, 0));img = pygame.Surface((20, 20));img.fill((255, 0, 0));f = pygame.font.SysFont('Arial', 20);clock = pygame.time.Clock()
+	f=pygame.font.SysFont('Arial', 30);t=f.render('Your amazing score was: '+str(score) + "!!!!", True, (255, 255, 255));screen.blit(t, (10, 270));pygame.display.update();pygame.time.wait(2000);sys.exit(0)
+xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210];dirs = 0;score = 0;applepos = (random.randint(0, 590), random.randint(0, 590));pygame.init();s=pygame.display.set_mode((600, 600));pygame.display.set_caption('Snake');appleimage = pygame.Surface((10, 10));appleimage.fill((0, 0, 238));img = pygame.Surface((20, 20));img.fill((255,255,0));f = pygame.font.SysFont('Arial', 20);clock = pygame.time.Clock()
 while True:
 	clock.tick(10)
 	for e in pygame.event.get():
@@ -29,10 +41,10 @@ while True:
 	elif dirs==1:xs[0] += 20
 	elif dirs==2:ys[0] -= 20
 	elif dirs==3:xs[0] -= 20	
-	s.fill((255, 255, 255))	
+	s.fill((0,0,0))	
 	for i in range(0, len(xs)):
 		s.blit(img, (xs[i], ys[i]))
-	s.blit(appleimage, applepos);t=f.render(str(score), True, (0, 0, 0));s.blit(t, (10, 10));pygame.display.update()
+	s.blit(appleimage, applepos);t=f.render(str(score), True, (255, 255, 0));s.blit(t, (10, 10));pygame.display.update()
 					
 					
 			

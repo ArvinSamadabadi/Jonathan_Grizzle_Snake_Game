@@ -73,7 +73,7 @@ class game():
         self.left,self.right,self.up,self.down = False,False,False,False
         self.hover = False
         self.click0 = False
-        color = (245,0,0)
+        color = (1,0,0)
         #rgb color
         for x in range(0,800,10):
             t=pg.Surface((10,10))
@@ -211,7 +211,7 @@ class game():
 class startmenu():
     def __init__(self):
         self.screen = pg.display.set_mode((800,450))
-        self.b1 = '(150, 300,100,50),"Start", [(0,255,0), (0,150,0)], action = self.start'
+        self.b1 = '(150, 300,100,50),"Start", [(60,255,60), (0,150,0)], action = self.start'
         self.b2 = '(550, 300,100,50),"Exit", [(255,0,0), (150,0,0)], action = self.exit'
         self.buttons = [self.b1, self.b2]
         self.blocks = []
