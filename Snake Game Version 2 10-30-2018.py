@@ -8,7 +8,7 @@ timer=int(10)
 while (timer != 0 ):
     timer=timer-1
     time.sleep(1)
-    print(timer)
+    print(str(timer) + " seconds left!")
 
 
       
