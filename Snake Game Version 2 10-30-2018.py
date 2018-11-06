@@ -3,7 +3,17 @@ from pygame.locals import *
 import time
 
 
-print("Game will start in 10 seconds! Get ready!")
+print("\n")
+print("This is very simple game. Press the up, down, left, or right arrows to make the snake eat the food. If you hit the edge of the screen, the game will end!")
+print("\n")
+user_input= input("Do you understand how the game works? Type yes to proceed: ")
+print("\n")
+
+if user_input.lower() == "yes":
+    print("Game will start in 10 seconds! Get ready!")
+  
+
+
 timer=int(10)
 while (timer != 0 ):
     timer=timer-1
