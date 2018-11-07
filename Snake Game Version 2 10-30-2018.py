@@ -10,7 +10,7 @@ user_input= input("Do you understand how the game works? Type yes to proceed: ")
 print("\n")
 
 if user_input.lower() == "yes":
-    print("Game will start in 10 seconds! Get ready!")
+    print("Game will start in 10 seconds! Get ready!!")
   
 
 
