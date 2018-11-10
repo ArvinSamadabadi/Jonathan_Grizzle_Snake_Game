@@ -31,7 +31,7 @@ def die(screen, score):
 	pygame.time.wait(2000);sys.exit(0)
 xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210];dirs = 0;score = 0;applepos = (random.randint(0, 590), random.randint(0, 590))
 pygame.init();s=pygame.display.set_mode((600, 600));pygame.display.set_caption('Snake')
-appleimage = pygame.Surface((20,20));appleimage.fill((0, 0, 238))
+Food = pygame.Surface((20,20));Food.fill((0, 0, 238))
 Snake = pygame.Surface((40, 40));Snake.fill((255,255,0))
 f = pygame.font.SysFont('Times New Roman', 20);clock = pygame.time.Clock()
 while True:
@@ -60,7 +60,7 @@ while True:
 	s.fill((0,0,0))	
 	for i in range(0, len(xs)):
 		s.blit(Snake, (xs[i], ys[i]))
-	s.blit(appleimage, applepos);t=f.render(str(score), True, (255, 255, 0));s.blit(t, (10, 10))
+	s.blit(Food, applepos);t=f.render(str(score), True, (255, 255, 0));s.blit(t, (10, 10))
 	pygame.display.update()
 					
 					
