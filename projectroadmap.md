@@ -13,9 +13,8 @@
 6. I want to change the color of the score on the top left corner. I want to change it to be yellow, so it matches the snake color. To do this,
    I can change the RGB colors.-DONE
 7. I want to add some instructions at the beginning of the game to make sure that users know how to use the game. This should not be too long,
-   but it should be a short introduction.
-8. I would like to change the shape of the food. Instead of it being a block, I would like for it to be a circle. I will have to do research
-   inorder to change the shapes.
+   but it should be a short introduction.-DONE
+8. I would like to change the size of the food. Instead of it being a small block, it needs to be a bigger block.. I will have to do research on how to change it. The snake should be changed also.- DONE
 9. After the message pops up about the game being over, I would like for it loop again until the user exits out of the game. This will require 
    research, but I bet there needs to be a while loop.
 10. Finally, the game needs to be tested to make sure everything works. In this stage, all of the bugs will be worked out to make the final product. 
