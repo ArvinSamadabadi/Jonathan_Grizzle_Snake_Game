@@ -4,7 +4,7 @@ import time
 
 
 print("\n")
-print("This is very simple game. Press the up, down, left, or right arrows to make the snake eat the food. If you hit the edge of the screen, the game will end!")
+print("This is very simple game. Press the up, down, left, or right arrows to make the snake eat the food. The snake must hit the food in the middle for it eat it. If you hit the edge of the screen, the game will end!")
 print("\n")
 user_input= input("Do you understand how the game works? Type yes to proceed: ")
 print("\n")
@@ -12,7 +12,6 @@ print("\n")
 if user_input.lower() == "yes":
     print("Game will start in 10 seconds! Get ready!!")
   
-
 
 timer=int(10)
 while (timer != 0 ):
@@ -26,8 +25,9 @@ def collide(x1, x2, y1, y2, w1, w2, h1, h2):
 	if x1+w1>x2 and x1<x2+w2 and y1+h1>y2 and y1<y2+h2:return True
 	else:return False
 def die(screen, score):
-	f=pygame.font.SysFont('Times New Roman', 30);t=f.render('Your amazing score was: '+str(score) + "!!!!", True, (255, 255, 255));screen.blit(t, (10, 270));pygame.display.update();pygame.time.wait(2000);sys.exit(0)
-xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210];dirs = 0;score = 0;applepos = (random.randint(0, 590), random.randint(0, 590));pygame.init();s=pygame.display.set_mode((600, 600));pygame.display.set_caption('Snake');appleimage = pygame.Surface((25, 25));appleimage.fill((0, 0, 238));Snake = pygame.Surface((40, 20));Snake.fill((255,255,0));f = pygame.font.SysFont('Times New Roman', 20);clock = pygame.time.Clock()
+	f=pygame.font.SysFont('Times New Roman', 30);t=f.render('Your amazing score was: '+str(score) + "!!!!", True, (255, 255, 255));screen.blit(t, (10, 270));pygame.display.update();
+	pygame.time.wait(2000);sys.exit(0)
+xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210];dirs = 0;score = 0;applepos = (random.randint(0, 590), random.randint(0, 590));pygame.init();s=pygame.display.set_mode((600, 600));pygame.display.set_caption('Snake');appleimage = pygame.Surface((25,25 ));appleimage.fill((0, 0, 238));Snake = pygame.Surface((40, 40));Snake.fill((255,255,0));f = pygame.font.SysFont('Times New Roman', 20);clock = pygame.time.Clock()
 while True:
 	clock.tick(10)
 	for e in pygame.event.get():
@@ -57,6 +57,6 @@ while True:
 	s.blit(appleimage, applepos);t=f.render(str(score), True, (255, 255, 0));s.blit(t, (10, 10));pygame.display.update()
 					
 					
-			
+		
 
 
