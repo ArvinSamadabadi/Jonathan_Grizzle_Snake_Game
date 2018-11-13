@@ -15,6 +15,5 @@
 7. I want to add some instructions at the beginning of the game to make sure that users know how to use the game. This should not be too long,
    but it should be a short introduction.-DONE
 8. I would like to change the size of the food. Instead of it being a small block, it needs to be a bigger block.. I will have to do research on how to change it. The snake should be changed also.- DONE
-9. After the message pops up about the game being over, I would like for it loop again until the user exits out of the game. This will require 
-   research, but I bet there needs to be a while loop.
-10. Finally, the game needs to be tested to make sure everything works. In this stage, all of the bugs will be worked out to make the final product. 
+9. After the message pops up about the game being over, I would like for a sound to play indicatating that the game is over. I will have to do some research, but I should be pretty simple. It should the last thing that happens before the user exits the game.- DONE
+10. Finally, the game needs to be tested to make sure everything works. In this stage, all of the bugs will be worked out to make the final product. -DONE
