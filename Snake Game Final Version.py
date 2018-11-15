@@ -27,16 +27,22 @@ def collide(x1, x2, y1, y2, w1, w2, h1, h2):
 	else:
 		return False
 def die(screen, score):
-	f=pygame.font.SysFont('Times New Roman', 30);t=f.render('Your amazing score was: '+str(score) + "!!!!", True, (255, 255, 255))
+	f=pygame.font.SysFont('Times New Roman', 30)
+	t=f.render('Your amazing score was: '+str(score) + "!!!!", True, (255, 255, 255))
 	winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
 	screen.blit(t, (10, 270))
 	pygame.display.update()
-	pygame.time.wait(2000)
-xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210];dirs = 0;score = 0;applepos = (random.randint(0, 590), random.randint(0, 590))
-pygame.init();s=pygame.display.set_mode((600, 600));pygame.display.set_caption('Snake Game')
+	pygame.time.wait(0000)
+xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210]
+dirs = 0
+score = 0
+applepos = (random.randint(0, 590), random.randint(0, 590))
+pygame.init();s=pygame.display.set_mode((600, 600))
+pygame.display.set_caption('Snake Game')
 Food = pygame.Surface((20,20));Food.fill((0, 0, 238))
 Snake = pygame.Surface((40, 40));Snake.fill((255,255,0))
-f = pygame.font.SysFont('Times New Roman', 20);clock = pygame.time.Clock()
+f = pygame.font.SysFont('Times New Roman', 20)
+clock = pygame.time.Clock()
 
 while True:
 	clock.tick(10)
@@ -55,7 +61,8 @@ while True:
 			break
 		i-= 1
 	if collide(xs[0], applepos[0], ys[0], applepos[1], 40, 20, 40, 20):
-		score+=1;xs.append(700);ys.append(700);applepos=(random.randint(0,590),random.randint(0,590))
+		score+=1;xs.append(700);ys.append(700)
+		applepos=(random.randint(0,590),random.randint(0,590))
 	if xs[0] < 0 or xs[0] > 580 or ys[0] < 0 or ys[0] > 580: die(s, score);break
 	i = len(xs)-1
 	while i >= 1:
@@ -67,8 +74,9 @@ while True:
 	s.fill((0,0,0))	
 	for i in range(0, len(xs)):
 		s.blit(Snake, (xs[i], ys[i]))
-	s.blit(Food, applepos);t=f.render(str(score), True, (255, 255, 0));s.blit(t, (10, 10))
-	
+	s.blit(Food, applepos)
+	t=f.render(str(score), True, (255, 255, 0));s.blit(t, (10, 10))
+
 	pygame.display.update()
 					
 					
