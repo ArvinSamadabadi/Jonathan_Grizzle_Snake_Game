@@ -11,7 +11,7 @@ def collide(x1, x2, y1, y2, w1, w2, h1, h2):
 		return False
 def die(screen, score):
 	f=pygame.font.SysFont('Times New Roman', 30)
-	t=f.render('Your amazing score was: '+str(score) + "!!!!", True, (255, 255, 255))
+	t=f.render('Your amazing score was: '+str(score) + "!!!!", True, (255,48,48))
 	winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
 	screen.blit(t, (10, 270))
 	pygame.display.update()
@@ -75,7 +75,7 @@ while True:
 		
 		s.blit(Snake, (xs[i], ys[i]))
 	s.blit(Food, applepos)
-	t=f.render("Score: " + str(score), True, (255, 255, 0))
+	t=f.render("Score: " + str(score), True, (255,48,48))
 	s.blit(t, (10, 10))
 
 	pygame.display.update()
