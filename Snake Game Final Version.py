@@ -29,7 +29,7 @@ Food.fill((0, 0, 238))
 Snake = pygame.Surface((40, 40))
 Snake.fill((255,255,0))
 f = pygame.font.SysFont('Times New Roman', 20)
-t=f.render("Welcome to the snake game.", True, (255, 255, 255))
+t=f.render("Welcome to the Snake Game!", True, (255, 255, 255))
 u=f.render("Press the up, down, and side arrows to make the snake eat the food!", True, (255, 255, 255))
 v=f.render("Don't hit the walls! You will loose!", True, (255, 255, 255))
 w=f.render("Game will start in 10 seconds get ready!", True, (255, 255, 255))
@@ -75,7 +75,7 @@ while True:
 		
 		s.blit(Snake, (xs[i], ys[i]))
 	s.blit(Food, applepos)
-	t=f.render("Score: " + str(score), True, (255,48,48))
+	t=f.render("Your Score: " + str(score), True, (255,48,48))
 	s.blit(t, (10, 10))
 
 	pygame.display.update()
