@@ -15,7 +15,7 @@ def die(screen, score):
 	winsound.PlaySound("SystemExclamation", winsound.SND_ALIAS)
 	screen.blit(t, (10, 270))
 	pygame.display.update()
-	pygame.time.wait(0000)
+	pygame.time.wait(2000)
 	sys.exit(0)
 xs = [290, 290, 290, 290, 290]
 ys = [290, 270, 250, 230, 210]
