@@ -21,3 +21,6 @@
 12. I would like to add "Your Score:  "Points!!" to the top of the window where the score count is kept! It should be center instead of the top left corner of the window- DONE 
 13. The name of the window needs to be changed to say "Snake Game". This has to do with the set caption line of code.-DONE 
 14. Finally, the game needs to be tested to make sure everything works. In this stage, all of the bugs will be worked out to make the final product. -DONE
+
+
+more tasks 
