@@ -54,12 +54,17 @@ while True:
 	i = len(xs)-1
 	while i >= 2:
 		if collide(xs[0], xs[i], ys[0], ys[i], 20, 20, 20, 20):
-			die(s, score);break
+			die(s, score)
+			break
 		i-= 1
 	if collide(xs[0], applepos[0], ys[0], applepos[1], 40, 20, 40, 20):
-		score+=1;xs.append(700);ys.append(700);applepos=(random.randint(0,590),random.randint(0,590))
+		score+=1
+		xs.append(700)
+		ys.append(700)
+		applepos=(random.randint(0,590),random.randint(0,590))
 	if xs[0] < 0 or xs[0] > 580 or ys[0] < 0 or ys[0] > 580: 
-		die(s, score);break
+		die(s, score)
+		break
 	i = len(xs)-1
 	while i >= 1:
 		xs[i] = xs[i-1]
