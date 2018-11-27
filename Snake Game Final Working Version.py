@@ -79,7 +79,7 @@ while True:
 		s.blit(Snake, (xs[i], ys[i]))
 	s.blit(Food, applepos)
 	t=f.render("Your Score: " + str(score) + " Points!!", True, (255,48,48))
-	s.blit(t, (175, 10))
+	s.blit(t, (200, 10))
 	pygame.display.update()
 					
 					
