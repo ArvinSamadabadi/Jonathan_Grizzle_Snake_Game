@@ -20,13 +20,15 @@
 11. I would like for the timer and directions to be in the pygame window and not in the terminal. I think this has to do with blit and render.- DONE
 12. I would like to add "Your Score:  "Points!!" to the top of the window where the score count is kept! It should be center instead of the top left corner of the window- DONE 
 13. The name of the window needs to be changed to say "Snake Game". This has to do with the set caption line of code.-DONE 
-14. Finally, the game needs to be tested to make sure everything works. In this stage, all of the bugs will be worked out to make the final product. -DONE
+14. I would like make the die message at the very end center on the window. This is very simple to fix with changing the blit line of code.-DONE   
+15. Finally, the game needs to be tested to make sure everything works. In this stage, all of the bugs will be worked out to make the final product. -DONE
 
 To be completed in in Sping 2019:
 
-15. Add animation to the end of the game. When the games ends, I would like for the snake to be carried away by a bird. This is will require much effort, so this is take some time to complete. 
-16. I would like to find a way to make the game loop endlessly. I think that this would require to put the whole game inside a while True loop. It will difficult to make sure that all of the functions and loops are spaced correctly in order for the game to still run.
-17. I would like for the user to be able to pick their color of snake. Since this game only covers the basics of Python, it will be a challenge to let the user chose the color. I know that this will require an input at the beginning of the game. 
-18. Last, I would like to publish this code, so that I can make it into a mobile app on Apple or Andriod. 
+16. Add animation to the end of the game. When the games ends, I would like for the snake to be carried away by a bird. This is will require much effort, so this is take some time to complete. 
+17. I would like to find a way to make the game loop endlessly. I think that this would require to put the whole game inside a while True loop. It will difficult to make sure that all of the functions and loops are spaced correctly in order for the game to still run.
+18. I would like for the user to be able to pick their color of snake. Since this game only covers the basics of Python, it will be a challenge to let the user chose the color. I know that this will require an input at the beginning of the game. 
+19. I would like for the user to see their score from the previous attempt. This will require reading and writing to a file. 
+20. Last, I would like to publish this code into the APP store or Google Play, so I can make it into a mobile app on Apple or Andriod. 
 
 
