@@ -4,7 +4,7 @@ Original Developer: Samuel BackMan
 
 IS 3020 Snake Game 
 
-This is a repository for a library of snake game code. I will post code of different snake games as well as several timer codes. 
+This is a repository for a library of snake game code. I will post code of different snake games as well as a timer code. 
 
 Here is a general descrition of the game:
 
