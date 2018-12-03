@@ -12,11 +12,14 @@ After doing research on what to create, I have decided to create a simple snake 
 
 URLS: 
 
-Snake games: https://gist.github.com/sanchitgangwar/2158089
+Snake games: 
+          
+https://gist.github.com/sanchitgangwar/2158089
 
-             https://www.pygame.org/project/3314
-
-             https://www.pygame.org/project-Snake+in+35+lines-818-.html
+https://www.pygame.org/project/3314
+             
+https://www.pygame.org/project-Snake+in+35+lines-818-.html
+             
 
 Timer: https://gist.github.com/Ashwinning/313a4bed6af3f7599ac168c4de82b555
 
