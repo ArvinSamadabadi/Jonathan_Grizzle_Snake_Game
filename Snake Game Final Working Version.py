@@ -9,6 +9,7 @@ def collide(x1, x2, y1, y2, w1, w2, h1, h2):
 		return True
 	else:
 		return False
+	
 def die(screen, score):
 	f=pygame.font.SysFont('Times New Roman', 30)
 	t=f.render('Your amazing score is: '+str(score) + " Points!!!!", True, (255,48,48))
