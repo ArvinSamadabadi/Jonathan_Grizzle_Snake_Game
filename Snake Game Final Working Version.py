@@ -1,9 +1,9 @@
+#created by Jonathan Grizzle
 import pygame, random, sys
 from pygame.locals import *
 import time
 #import winsound
 import collide
-      
 
 	
 def die(screen, score):
