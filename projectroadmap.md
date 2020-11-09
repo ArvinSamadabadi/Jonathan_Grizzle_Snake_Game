@@ -1,6 +1,6 @@
 # Task List for Snake Game
 
-1. Read through code to understand what the code is doing. I am needing to look for what each function does as well what can be change
+1. [ ] Read through code to understand what the code is doing. I am needing to look for what each function does as well what can be change
    in the code.-DONE
 2. Since the code is messy in it's current state, it needs to be cleaned up and lines need to seperated without ";".-DONE  
 3. After looking through the code, I have decided that I would like to change the colors in the game. This includes the background, snake
