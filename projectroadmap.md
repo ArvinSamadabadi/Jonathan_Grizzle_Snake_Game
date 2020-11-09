@@ -1,4 +1,4 @@
-#Task List for Snake Game
+# Task List for Snake Game
 
 1. Read through code to understand what the code is doing. I am needing to look for what each function does as well what can be change
    in the code.-DONE
